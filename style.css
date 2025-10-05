@@ -245,6 +245,9 @@ mark {
   overflow: hidden;
 }
 .container-minigames__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
   margin-bottom: 40px;
 }
 

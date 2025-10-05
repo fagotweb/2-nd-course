@@ -261,6 +261,9 @@ mark {
     overflow: hidden;
 
     &__title {
+        font-weight: 700;
+        font-size: $font-size * 4;
+        line-height: 64px;
         margin-bottom: 40px;
     }
 }
