@@ -1,0 +1,161 @@
+@media (max-width: 767px) {
+
+    $width-site: 343px;
+    $gap: 32px;
+    $font-size: 16px;
+
+    h4 br {
+        display: none;
+    }
+
+    .center {
+        padding-left: calc(50% - $width-site/2);
+        padding-right: calc(50% - $width-site/2);
+    }
+
+    .hero-page {
+
+        &__content {
+            padding-top: 147px;
+            padding-bottom: 182px;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: $font-size * 2.5;
+        }
+
+        &__subtitle {
+            font-size: $font-size;
+            line-height: 100%;
+            max-width: 296px;
+            margin: auto;
+            padding-bottom: 36px;
+        }
+
+        &__button {
+            display: block;
+            max-width: 285px;
+            margin: auto;
+        }
+    }
+
+    .hero-page::after {
+        width: 223px;
+        height: 238px;
+        background-image: url(./img/starmob.svg);
+        top: -95px;
+        right: -80px;
+        transform: rotate(108.68deg);
+    }
+
+    mark {
+        font-weight: 600;
+    }
+
+    .big-green {
+        width: 35px;
+        height: 35px;
+        top: 97px;
+        left: 37px;
+        opacity: 1;
+    }
+
+    .small {
+        width: 21px;
+        height: 21px;
+        top: 64px;
+        left: 91px;
+        opacity: 1;
+    }
+
+    .big {
+        width: 40px;
+        height: 40px;
+        bottom: 79px;
+        right: 34px;
+        opacity: 1;
+    }
+
+    .small-green {
+        width: 18px;
+        height: 18px;
+        bottom: 125px;
+        right: 86px;
+        opacity: 1;
+    }
+
+    .container-game {
+        display: none;
+
+        &__title {
+            font-size: $font-size * 2.5;
+        }
+    }
+
+    .container-minigames {
+        padding-bottom: 10px;
+
+        &__title {
+            margin-bottom: 48px;
+        }
+    }
+
+    .minigames {
+        flex-direction: column-reverse;
+        margin-top: 24px;
+
+        &__title {
+            font-size: $font-size * 2;
+        }
+
+        &__details {
+            font-size: $font-size;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+
+        &__button {
+            display: block;
+            padding: 16px 110px;
+            font-size: $font-size;
+            line-height: 20px;
+        }
+
+        &__img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .minigames-content {
+        width: 100%;
+        padding: 30px;
+        flex-direction: column
+    }
+
+    .star3 {
+        display: none;
+    }
+
+    .star4 {
+        display: none;
+    }
+
+    .star5 {
+        display: none;
+    }
+
+    .star6 {
+        display: none;
+    }
+}
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__text {        
+        font-size: $font-size * 1;
+    }
+}
