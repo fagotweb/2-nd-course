@@ -19,7 +19,7 @@
             <h4 class="hero-page__subtitle">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай
                 <mark>«Поехали!»</mark> и <mark>приступай.</mark>
             </h4>
-            <a class="hero-page__button" href="#1">Поехали!</a>
+            <a class="hero-page__button" href="#game">Поехали!</a>
         </div>
         <svg class="big-green" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="57.000000" height="57.000000" fill="none">
@@ -46,43 +46,45 @@
                 fill="rgb(32,32,39)" fill-rule="evenodd" />
         </svg>
     </section>
-    <section id="1" class="container-game center">
+    <section id="game" class="container-game center">
         <h1 class="container-game__title">Об играх</h1>
         <p class="container-game__subtitle">В моей коллекции представлено 6 игр на разные темы.</p>
         <p class="container-game__subtitle">Игры несложные — в них может поиграть каждый.</p>
         <p class="container-game__subtitle">Все игры доступны для пользования.</p>
         <div class="content-box">
             <div class="for">
-                <a class="for__item" href="#">
+                <a class="for__item" href="#game1">
+                    <div>
                     <img class="for__item-img" src="./img/cover1.jpg" alt="">
+                    </div>
                     <p class="for__item-details">Игра №1</p>
                     <h4 class="for__item-title">Угадай число</h4>
                 </a>
-                <a class="for__item" href="#">
+                <a class="for__item" href="#game4">
                     <img class="for__item-img" src="./img/cover4.jpg" alt="">
                     <p class="for__item-details">Игра №4</p>
-                    <h4 class="for__item-title">Камень, ножницы, бумага</h4>
+                    <h4 class="for__item-title">Камень, ножницы, <br>бумага</h4>
                 </a>
             </div>
             <div class="for">
-                <a class="for__item" href="#">
+                <a class="for__item" href="#game2">
                     <img class="for__item-img" src="./img/cover2.jpg" alt="">
                     <p class="for__item-details">Игра №2</p>
                     <h4 class="for__item-title">Простая арифметика</h4>
                 </a>
-                <a class="for__item" href="#">
+                <a class="for__item" href="#game5">
                     <img class="for__item-img" src="./img/cover5.jpg" alt="">
                     <p class="for__item-details">Игра №5</p>
                     <h4 class="for__item-title">Простая викторина</h4>
                 </a>
             </div>
             <div class="for">
-                <a class="for__item" href="#">
+                <a class="for__item" href="#game3">
                     <img class="for__item-img" src="./img/cover3.jpg" alt="">
                     <p class="for__item-details">Игра №3</p>
                     <h4 class="for__item-title">Переверни текст</h4>
                 </a>
-                <a class="for__item" href="#">
+                <a class="for__item" href="#game6">
                     <img class="for__item-img" src="./img/cover6.jpg" alt="">
                     <p class="for__item-details">Игра №6</p>
                     <h4 class="for__item-title">Генератор случайных цветов</h4>
@@ -109,7 +111,7 @@
     <section class="container-minigames center">
         <h1 class="container-minigames__title">Мини-игры</h1>
         <div class="minigames">
-            <div class="minigames-content">
+            <div id="game1" class="minigames-content">
                 <h2 class="minigames__title">Угадай число</h2>
                 <p class="minigames__details">Попробуй угадать случайное <br>число от 1 до 100.</p>
                 <a class="minigames__button" href="#">Играть!</a>
@@ -126,7 +128,7 @@
                     fill="rgb(188,236,48)" fill-rule="evenodd" />
             </svg>            
         </div>
-        <div class="minigames minigames-reverse">
+        <div id="game2" class="minigames minigames-reverse">
             <div class="minigames-content">
                 <h2 class="minigames__title">Простая арифметика</h2>
                 <p class="minigames__details">Попробуй решить простые <br>арифметические задачи.</p>
@@ -134,7 +136,7 @@
             </div>
             <img class="minigames__img" src="./img/cover2.jpg" alt="">
         </div>
-        <div class="minigames">
+        <div id="game3" class="minigames">
             <div class="minigames-content">
                 <h2 class="minigames__title">Переверни текст</h2>
                 <p class="minigames__details">Попробуй ввести текст, который <br>будет перевернут.</p>
@@ -142,7 +144,7 @@
             </div>
             <img class="minigames__img" src="./img/cover3.jpg" alt="">
         </div>
-        <div class="minigames minigames-reverse">
+        <div id="game4" class="minigames minigames-reverse">
             <div class="minigames-content">
                 <h2 class="minigames__title">Камень, ножницы, бумага</h2>
                 <p class="minigames__details">Сыграй в популярную игру <br>против компьютера.</p>
@@ -150,7 +152,7 @@
             </div>
             <img class="minigames__img" src="./img/cover4.jpg" alt="">
         </div>
-        <div class="minigames">
+        <div id="game5" class="minigames">
             <div class="minigames-content">
                 <h2 class="minigames__title">Простая викторина</h2>
                 <p class="minigames__details">Отвечай на вопросы викторины <br>с вариантами ответов.</p>
@@ -158,7 +160,7 @@
             </div>
             <img class="minigames__img" src="./img/cover5.jpg" alt="">
         </div>
-        <div class="minigames minigames-reverse">
+        <div id="game6" class="minigames minigames-reverse">
             <div class="minigames-content">
                 <h2 class="minigames__title">Генератор случайных цветов</h2>
                 <p class="minigames__details">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>

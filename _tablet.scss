@@ -1,7 +1,7 @@
 @media (max-width: 1200px) {
 
     $width-site: 786px;
-    $gap: 24px;
+    $gap: 2px;
     $font-size: 16px;
 
     h4 br {
@@ -110,6 +110,7 @@
         border-radius: 30px;
         padding-bottom: 36px;
         color: rgba(32, 32, 39, 1);
+        margin: 11px;
     }
 
     &__item-img {
@@ -131,7 +132,7 @@
     }
 
     &__item-title {
-        font-size: $font-size * 1.3;
+        font-size: $font-size * 1.25;
         font-weight: 500;        
         margin-left: 24px;
         margin-right: 32px;
