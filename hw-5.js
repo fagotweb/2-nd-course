@@ -1,22 +1,18 @@
 // задача #1 Возврат меньшего числа
-
 let minNum = (a, b) => Math.min(a, b);
 console.log (minNum (4, 8));
 
 // задача #2 Принимает и возвращает число
-
 let num = prompt ('Ввести число'); 
 if (num % 2) { console.log('Число нечётное!'); } 
 else { console.log('Число чётное!'); }
 
 
 // задача #3 Квадрат числа
-
 let squareNum = (c) => c**2;
 console.log (squareNum (8));
 
 // задача #4 Сколько лет
-
 function ageNum () {
    const userAge = parseInt(prompt ('Сколько лет'));
    if (userAge < 0) {
@@ -29,7 +25,6 @@ function ageNum () {
 ageNum ();
 
 // задача #5 Алгоритм
-
 function nonNum () {
    const oneNum = prompt ('Введите первое число');
    const twoNum = prompt ('Введите второе число');
@@ -43,7 +38,6 @@ function nonNum () {
 nonNum ();
 
 // задача #6 Число в кубе
-
 function cubeNum () {
    num = prompt ('Введите число');   
    let cube = num**3;
@@ -61,7 +55,6 @@ function cubeNum () {
 cubeNum ();
 
 // задача #7 Объекты и методы
-
 function getArea() { return Math.PI * this.radius * this.radius; }
 const circle1 = {radius: 3};
 circle1.getArea = getArea;
