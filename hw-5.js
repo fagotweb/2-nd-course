@@ -8,12 +8,11 @@ if (num % 2) { console.log('Число нечётное!'); }
 else { console.log('Число чётное!'); }
 
 
-// задача #3 Квадрат числа
+// задача #3 Квадрат числа.
 let squareNum = (c) => c**2;
 console.log (squareNum (8));
 
-// задача #4 Сколько лет
-
+// задача #4 Сколько лет.
 function ageNum () {
    const userAge = parseInt(prompt ('Сколько лет'));
    if (userAge < 0) {
@@ -25,7 +24,7 @@ function ageNum () {
 }
 ageNum ();
 
-// задача #5 Алгоритм
+// задача #5 Алгоритм.
 function nonNum () {
    const oneNum = prompt ('Введите первое число');
    const twoNum = prompt ('Введите второе число');
