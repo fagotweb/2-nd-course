@@ -13,6 +13,7 @@ let squareNum = (c) => c**2;
 console.log (squareNum (8));
 
 // задача #4 Сколько лет
+
 function ageNum () {
    const userAge = parseInt(prompt ('Сколько лет'));
    if (userAge < 0) {
