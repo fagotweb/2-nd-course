@@ -1,6 +1,6 @@
 $color-text: #FFFFFF;
 $width-site: 1200px;
-$gap: 32px;
+$gap: 2px;
 $font-size: 16px;
 
 * {
@@ -33,7 +33,7 @@ body {
 .hero-page {
     overflow: hidden;
     position: relative;
-    z-index: -2;
+    z-index: 1;
     background-color: rgba(225, 255, 143, 1);
     ;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body {
     width: 1074px;
     height: 1130px;
     background-image: url(./img/starhed.svg);
-    z-index: -1;
+    z-index: 2;
     top: -333px;
     right: -488px;
     background-repeat: no-repeat;
@@ -152,14 +152,14 @@ mark {
     position: relative;
     margin-top: 72px;
     display: grid;
-    gap: $gap;
+    gap: &$gap;
     grid-template-columns: repeat(12, 1fr);
 }
 
 .for {
     grid-column: span 4;   
     display: flex;
-    gap: $gap;
+    gap: &$gap;
     justify-content: center;
     color: $color-text;
     flex-direction: column;
@@ -170,10 +170,16 @@ mark {
         border-radius: 30px;
         padding-bottom: 36px;
         color: rgba(32, 32, 39, 1);
+        margin: 15px;
+    }
+
+    &__item:hover {
+        zoom: 1.1;
+        margin: 0;       
     }
 
     &__item-img {
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 40px;
         border-radius: 30px;
     }
@@ -191,7 +197,7 @@ mark {
     }
 
     &__item-title {
-        font-size: $font-size * 2;
+        font-size: $font-size * 1.9;
         font-weight: 700;
         line-height: 100%;
         margin-left: 32px;
@@ -261,6 +267,9 @@ mark {
     overflow: hidden;
 
     &__title {
+        font-weight: 700;
+        font-size: $font-size * 4;
+        line-height: 64px;
         margin-bottom: 40px;
     }
 }
