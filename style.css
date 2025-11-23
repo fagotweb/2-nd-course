@@ -28,7 +28,7 @@ body {
 .hero-page {
   overflow: hidden;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   background-color: rgb(225, 255, 143);
   background-repeat: no-repeat;
   background-position: center;
@@ -73,7 +73,7 @@ body {
   width: 1074px;
   height: 1130px;
   background-image: url(./img/starhed.svg);
-  z-index: -1;
+  z-index: 2;
   top: -333px;
   right: -488px;
   background-repeat: no-repeat;
@@ -139,14 +139,14 @@ mark {
   position: relative;
   margin-top: 72px;
   display: grid;
-  gap: 32px;
+  gap: content-box 2px;
   grid-template-columns: repeat(12, 1fr);
 }
 
 .for {
   grid-column: span 4;
   display: flex;
-  gap: 32px;
+  gap: for 2px;
   justify-content: center;
   color: #FFFFFF;
   flex-direction: column;
@@ -157,9 +157,14 @@ mark {
   border-radius: 30px;
   padding-bottom: 36px;
   color: rgb(32, 32, 39);
+  margin: 15px;
+}
+.for__item:hover {
+  zoom: 1.1;
+  margin: 0;
 }
 .for__item-img {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 40px;
   border-radius: 30px;
 }
@@ -176,7 +181,7 @@ mark {
   width: fit-content;
 }
 .for__item-title {
-  font-size: 32px;
+  font-size: 30.4px;
   font-weight: 700;
   line-height: 100%;
   margin-left: 32px;
@@ -245,6 +250,9 @@ mark {
   overflow: hidden;
 }
 .container-minigames__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
   margin-bottom: 40px;
 }
 
@@ -390,16 +398,17 @@ mark {
   }
   .content-box {
     margin-top: 32px;
-    gap: 24px;
+    gap: 2px;
   }
   .for {
-    gap: 24px;
+    gap: 2px;
   }
   .for__item {
     background-color: #F7F7F7;
     border-radius: 30px;
     padding-bottom: 36px;
     color: rgb(32, 32, 39);
+    margin: 11px;
   }
   .for__item-img {
     max-width: 100%;
@@ -419,7 +428,7 @@ mark {
     width: fit-content;
   }
   .for__item-title {
-    font-size: 20.8px;
+    font-size: 20px;
     font-weight: 500;
     margin-left: 24px;
     margin-right: 32px;
@@ -470,15 +479,18 @@ mark {
   }
   .hero-page__title {
     font-size: 40px;
+    line-height: 49px;
   }
   .hero-page__subtitle {
     font-size: 16px;
-    line-height: 100%;
+    line-height: 20px;
     max-width: 296px;
     margin: auto;
     padding-bottom: 36px;
   }
   .hero-page__button {
+    font-size: 16px;
+    line-height: 20px;
     display: block;
     max-width: 285px;
     margin: auto;
@@ -490,6 +502,7 @@ mark {
     top: -95px;
     right: -80px;
     transform: rotate(108.68deg);
+    background-size: 100%;
   }
   mark {
     font-weight: 600;
@@ -506,21 +519,18 @@ mark {
     height: 21px;
     top: 64px;
     left: 91px;
-    opacity: 1;
   }
   .big {
     width: 40px;
     height: 40px;
     bottom: 79px;
     right: 34px;
-    opacity: 1;
   }
   .small-green {
     width: 18px;
     height: 18px;
     bottom: 125px;
     right: 86px;
-    opacity: 1;
   }
   .container-game {
     display: none;
@@ -529,10 +539,13 @@ mark {
     font-size: 40px;
   }
   .container-minigames {
+    padding-top: 48px;
     padding-bottom: 10px;
   }
   .container-minigames__title {
     margin-bottom: 48px;
+    line-height: 49px;
+    font-size: 40px;
   }
   .minigames {
     flex-direction: column-reverse;
@@ -543,6 +556,7 @@ mark {
   }
   .minigames__details {
     font-size: 16px;
+    line-height: 20px;
     margin-top: 16px;
     margin-bottom: 32px;
   }
@@ -558,7 +572,7 @@ mark {
   }
   .minigames-content {
     width: 100%;
-    padding: 30px;
+    padding: 32px 29px;
     flex-direction: column;
   }
   .star3 {
