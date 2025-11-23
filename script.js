@@ -66,3 +66,21 @@ function simpleQuiz() {
     }    
     alert(`Правильных ответов: ${count}`);
 }
+
+function rockмPaperScissors() {
+    let userChoice = prompt ("Введите КАМЕНЬ, НОЖНИЦЫ или БУМАГА", "КАМЕНЬ").toLowerCase();
+    const arr = ["камень", "ножницы", "бумага"]
+    const computerChoice = arr[Math.floor(Math.random() * 3)];
+    alert (`Выбор пользователя: ${userChoice.toUpperCase()} \nВыбор компьютера: ${computerChoice.toUpperCase()}`)
+    if (userChoice === computerChoice) {
+      alert ('Ничья');
+  } else if (
+      (userChoice === 'камень' && computerChoice === 'ножницы') ||
+      (userChoice === 'бумага' && computerChoice === 'камень') ||
+      (userChoice === 'ножницы' && computerChoice === 'бумага')
+  ) {
+      alert ('Победа');
+  } else {
+      alert ('Поражение');
+  }
+}
