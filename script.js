@@ -58,29 +58,58 @@ function simpleQuiz() {
         }
     ];
     let index = 0;
-    let count = 0;    
+    let count = 0;
     while (index !== 3) {
-        userNum = prompt('Вопрос: ' + quiz[index]['question'] + `\nВарианты ответа:` + quiz[index]['options']);        
-        if (userNum == quiz[index]['correctAnswer']) {count++;}        
+        userNum = prompt('Вопрос: ' + quiz[index]['question'] + `\nВарианты ответа:` + quiz[index]['options']);
+        if (userNum == quiz[index]['correctAnswer']) { count++; }
         index++;
-    }    
+    }
     alert(`Правильных ответов: ${count}`);
 }
 
 function rockмPaperScissors() {
-    let userChoice = prompt ("Введите КАМЕНЬ, НОЖНИЦЫ или БУМАГА", "КАМЕНЬ").toLowerCase();
+    let userChoice = prompt("Введите КАМЕНЬ, НОЖНИЦЫ или БУМАГА", "КАМЕНЬ").toLowerCase();
     const arr = ["камень", "ножницы", "бумага"]
     const computerChoice = arr[Math.floor(Math.random() * 3)];
-    alert (`Выбор пользователя: ${userChoice.toUpperCase()} \nВыбор компьютера: ${computerChoice.toUpperCase()}`)
+    alert(`Выбор пользователя: ${userChoice.toUpperCase()} \nВыбор компьютера: ${computerChoice.toUpperCase()}`)
     if (userChoice === computerChoice) {
-      alert ('Ничья');
-  } else if (
-      (userChoice === 'камень' && computerChoice === 'ножницы') ||
-      (userChoice === 'бумага' && computerChoice === 'камень') ||
-      (userChoice === 'ножницы' && computerChoice === 'бумага')
-  ) {
-      alert ('Победа');
-  } else {
-      alert ('Поражение');
-  }
+        alert('Ничья');
+    } else if (
+        (userChoice === 'камень' && computerChoice === 'ножницы') ||
+        (userChoice === 'бумага' && computerChoice === 'камень') ||
+        (userChoice === 'ножницы' && computerChoice === 'бумага')
+    ) {
+        alert('Победа');
+    } else {
+        alert('Поражение');
+    }
 }
+
+function randomColorGenerator() {
+    const contentEl = document.querySelector('.container-game6');
+    contentEl.style.display = "block"
+
+    const contentElRect = contentEl.getBoundingClientRect();
+    const centerX = (window.innerWidth - contentElRect.width) / 2;
+    const centerY = (window.innerHeight - contentElRect.height) / 2;
+    contentEl.style.position = "fixed";
+    contentEl.style.left = `${centerX}px`;
+    contentEl.style.top = `${centerY}px`;
+
+    const btnEl = document.querySelector('.btn');
+    btnEl.addEventListener('click', () => {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        contentEl.style.background = color;
+    })
+
+    const btnRemoveEl = document.querySelector('.btn-remove');
+    btnRemoveEl.addEventListener('click', () => {
+        contentEl.style.display = "none";
+    })
+}
+
+

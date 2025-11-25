@@ -37,7 +37,7 @@ body {
 }
 .hero-page__content {
   padding-top: 196px;
-  padding-bottom: 246px;
+  padding-bottom: 172px;
 }
 .hero-page__title {
   font-size: 64px;
@@ -116,6 +116,41 @@ mark {
   opacity: 1;
 }
 
+.scrolling {
+  display: flex;
+  overflow: hidden;
+  background-color: #BCEC30;
+}
+.scrolling:hover .scroll {
+  animation-play-state: paused;
+}
+
+.scroll {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  padding-left: 49px;
+  animation: scroll-left 10s linear infinite;
+}
+.scroll__text {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translate(0%);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
 .container-game {
   background-color: rgb(32, 32, 39);
   color: #fff;
@@ -139,14 +174,14 @@ mark {
   position: relative;
   margin-top: 72px;
   display: grid;
-  gap: content-box 2px;
+  gap: 2px;
   grid-template-columns: repeat(12, 1fr);
 }
 
 .for {
   grid-column: span 4;
   display: flex;
-  gap: for 2px;
+  gap: 2px;
   justify-content: center;
   color: #FFFFFF;
   flex-direction: column;
@@ -318,6 +353,34 @@ mark {
   font-weight: 600;
   line-height: 100%;
   text-align: center;
+}
+
+.container-game6 {
+  display: none;
+  background: rgb(32, 32, 39);
+  border-radius: 60px;
+  text-align: center;
+  height: 420px;
+  width: 600px;
+  z-index: 20;
+}
+
+.btn {
+  background: rgb(32, 32, 39);
+  border-radius: 60px;
+  padding: 16px 76px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  color: #fff;
+  height: 100px;
+  margin-top: 150px;
+}
+
+.btn-remove {
+  height: 80px;
+  margin-top: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -532,6 +595,13 @@ mark {
     bottom: 125px;
     right: 86px;
   }
+  .scroll {
+    height: 51px;
+  }
+  .scroll__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .container-game {
     display: none;
   }
@@ -587,11 +657,28 @@ mark {
   .star6 {
     display: none;
   }
-}
-.footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.footer__text {
-  font-size: 16px;
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
+  .container-game6 {
+    height: 600px;
+    width: 300px;
+  }
+  .btn {
+    border-radius: 30px;
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 29px;
+    height: 60px;
+    margin-top: 270px;
+  }
+  .btn-remove {
+    height: 60px;
+    margin-top: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */

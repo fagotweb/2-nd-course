@@ -86,6 +86,15 @@
         right: 86px;
     }
 
+    .scroll {
+        height: 51px;
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
     .container-game {
         display: none;
 
@@ -154,13 +163,33 @@
     .star6 {
         display: none;
     }
-}
 
-.footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
 
-    &__text {        
-        font-size: $font-size * 1;
+        &__text {
+            font-size: $font-size * 1;
+        }
+    }
+
+    .container-game6 {
+        height: 600px;
+        width: 300px;
+    }
+
+    .btn {
+        border-radius: 30px;
+        padding: 16px 24px;
+        text-align: center;
+        font-size: $font-size;
+        line-height: 29px;
+        height: 60px;
+        margin-top: 270px;
+    }
+
+    .btn-remove {
+        height: 60px;
+        margin-top: 150px;
     }
 }
