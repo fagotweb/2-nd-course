@@ -1,6 +1,6 @@
 $color-text: #FFFFFF;
 $width-site: 1200px;
-$gap: 32px;
+$gap: 2px;
 $font-size: 16px;
 
 * {
@@ -33,7 +33,7 @@ body {
 .hero-page {
     overflow: hidden;
     position: relative;
-    z-index: -2;
+    z-index: 1;
     background-color: rgba(225, 255, 143, 1);
     ;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@ body {
 
     &__content {
         padding-top: 196px;
-        padding-bottom: 246px;
+        padding-bottom: 172px;
     }
 
     &__title {
@@ -84,7 +84,7 @@ body {
     width: 1074px;
     height: 1130px;
     background-image: url(./img/starhed.svg);
-    z-index: -1;
+    z-index: 2;
     top: -333px;
     right: -488px;
     background-repeat: no-repeat;
@@ -127,6 +127,45 @@ mark {
     opacity: 1;
 }
 
+.scrolling {
+    display: flex;
+    overflow: hidden;
+    background-color: #BCEC30;
+
+    &:hover .scroll {
+        animation-play-state: paused;
+    }
+}
+
+.scroll {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    padding-left: 49px;
+    animation: scroll-left 10s linear infinite;
+
+    &__text {
+        color: rgba(32, 32, 39, 1);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+        letter-spacing: 4%;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translate(0%);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
 .container-game {
     background-color: rgba(32, 32, 39, 1);
     color: #fff;
@@ -157,7 +196,7 @@ mark {
 }
 
 .for {
-    grid-column: span 4;   
+    grid-column: span 4;
     display: flex;
     gap: $gap;
     justify-content: center;
@@ -170,10 +209,16 @@ mark {
         border-radius: 30px;
         padding-bottom: 36px;
         color: rgba(32, 32, 39, 1);
+        margin: 15px;
+    }
+
+    &__item:hover {
+        zoom: 1.1;
+        margin: 0;
     }
 
     &__item-img {
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 40px;
         border-radius: 30px;
     }
@@ -191,7 +236,7 @@ mark {
     }
 
     &__item-title {
-        font-size: $font-size * 2;
+        font-size: $font-size * 1.9;
         font-weight: 700;
         line-height: 100%;
         margin-left: 32px;
@@ -257,10 +302,13 @@ mark {
     background-color: rgba(32, 32, 39, 1);
     color: #fff;
     padding-top: 46px;
-    padding-bottom: 144px;    
+    padding-bottom: 144px;
     overflow: hidden;
 
     &__title {
+        font-weight: 700;
+        font-size: $font-size * 4;
+        line-height: 64px;
         margin-bottom: 40px;
     }
 }
@@ -305,7 +353,7 @@ mark {
         color: #000;
     }
 
-    &__img {       
+    &__img {
         border-radius: 30px;
         width: 50%;
     }
@@ -333,6 +381,34 @@ mark {
         line-height: 100%;
         text-align: center;
     }
+}
+
+.container-game6 {
+    display: none;
+    background: rgba(32, 32, 39, 1);
+    border-radius: 60px;
+    text-align: center;
+    height: 420px;
+    width: 600px;
+    z-index: 20;
+}
+
+.btn {
+    background: rgba(32, 32, 39, 1);
+    border-radius: 60px;
+    padding: 16px 76px;
+    text-align: center;
+    font-size: $font-size * 1.5;
+    line-height: 29px;
+    font-weight: 600;
+    color: #fff;
+    height: 100px;
+    margin-top: 150px;
+}
+
+.btn-remove {
+    height: 80px;
+    margin-top: 50px;
 }
 
 @import 'tablet';

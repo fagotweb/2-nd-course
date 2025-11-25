@@ -23,17 +23,20 @@
 
         &__title {
             font-size: $font-size * 2.5;
+            line-height: 49px;
         }
 
         &__subtitle {
             font-size: $font-size;
-            line-height: 100%;
+            line-height: 20px;
             max-width: 296px;
             margin: auto;
             padding-bottom: 36px;
         }
 
         &__button {
+            font-size: $font-size;
+            line-height: 20px;
             display: block;
             max-width: 285px;
             margin: auto;
@@ -47,6 +50,7 @@
         top: -95px;
         right: -80px;
         transform: rotate(108.68deg);
+        background-size: 100%;
     }
 
     mark {
@@ -66,7 +70,6 @@
         height: 21px;
         top: 64px;
         left: 91px;
-        opacity: 1;
     }
 
     .big {
@@ -74,7 +77,6 @@
         height: 40px;
         bottom: 79px;
         right: 34px;
-        opacity: 1;
     }
 
     .small-green {
@@ -82,7 +84,15 @@
         height: 18px;
         bottom: 125px;
         right: 86px;
-        opacity: 1;
+    }
+
+    .scroll {
+        height: 51px;
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     .container-game {
@@ -94,10 +104,13 @@
     }
 
     .container-minigames {
+        padding-top: 48px;
         padding-bottom: 10px;
 
         &__title {
             margin-bottom: 48px;
+            line-height: 49px;
+            font-size: $font-size * 2.5;
         }
     }
 
@@ -111,6 +124,7 @@
 
         &__details {
             font-size: $font-size;
+            line-height: 20px;
             margin-top: 16px;
             margin-bottom: 32px;
         }
@@ -130,7 +144,7 @@
 
     .minigames-content {
         width: 100%;
-        padding: 30px;
+        padding: 32px 29px;
         flex-direction: column
     }
 
@@ -149,13 +163,33 @@
     .star6 {
         display: none;
     }
-}
 
-.footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
 
-    &__text {        
-        font-size: $font-size * 1;
+        &__text {
+            font-size: $font-size * 1;
+        }
+    }
+
+    .container-game6 {
+        height: 600px;
+        width: 300px;
+    }
+
+    .btn {
+        border-radius: 30px;
+        padding: 16px 24px;
+        text-align: center;
+        font-size: $font-size;
+        line-height: 29px;
+        height: 60px;
+        margin-top: 270px;
+    }
+
+    .btn-remove {
+        height: 60px;
+        margin-top: 150px;
     }
 }
